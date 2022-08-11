@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  nginx:
+    build: .
+    image: michbud98/ascii-generator
+    container_name: ascii-generator
+    restart: always
+    ports:
+      - '8093:8091'
